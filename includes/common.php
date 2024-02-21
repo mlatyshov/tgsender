@@ -1,9 +1,13 @@
 <?php
 
+// хранилище файлов
+$uploadDir = 'uploads/';
+
 // разрешение на рассылку
 $TGSenderEnabled = false;
 $EMSenderEnabled = false;
-// тема письма для 
+
+// тема письма для smtp.mail.ru
 $subjectPDF = 'вам письмо';
 
 if (!file_exists('includes/setup.php'))
@@ -20,7 +24,6 @@ if ($conn->connect_error) {
     die("Ошибка подключения: " . $conn->connect_error);
 }
 
-$uploadDir = 'uploads/';
 session_start();
 
 
