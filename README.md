@@ -37,3 +37,4 @@ _includes/setup-default.php_
 В setup.php заполнить данные для mysql, smtp.mail.ru и telegrambot
 
 
+Для отправки вложений используем PHPmailer. Установка: composer require phpmailer/phpmailer
