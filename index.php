@@ -30,7 +30,13 @@ $recipients_count = recipients_get_count();
 
 <h1>Менеджер рассылки</h1>
 
-<div id='message'  class="alert warning"></div>
+<div id='message'  class="alert warning">
+Здесь загружается pdf файл, настраивается список получателей.
+<br />
+Далее производится отправка через TelegramBot или smtp.mail.ru в зависимости от указанного канала у получателя.
+<br />
+В данный момент рассылка отключена.
+</div>
 
 <br /><hr />
 
