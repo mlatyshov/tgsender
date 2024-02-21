@@ -1,0 +1,65 @@
+
+#deleteBtn {
+    color: red;
+}
+
+#message, #currentFile {
+    padding: 20px 0;
+}
+
+#filecontrol {
+    margin-top: 30px;
+}
+#filename_hash {
+    display: none;
+}
+
+#recipients_addnew {
+    display: none; 
+    padding: 20px 5px; 
+    background-color: #eee;
+}
+.table{
+    border: 1px solid #eee;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+.table td{
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    
+}
+.table tbody tr:nth-child(odd){
+    background: #fff;
+    text-align: center;
+}
+.table tbody tr:nth-child(even){
+    background: #F7F7F7;
+    text-align: center;
+}        
+
+
+.alert {
+    position: relative;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    }
+
+.alert.warning {
+    color: #856404;
+    background-color: #fff;
+    }        
+.td_tg {
+    color: #23038C;
+    }
+.td_email {
+    color: #85004B;
+}
