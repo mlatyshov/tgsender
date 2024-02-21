@@ -19,12 +19,16 @@
 Отправка сообщений в примере запрещена во избежании спам-активности!
 
 При разворачивании клона необходимо изменить два файла:
+
 _includes/common.php_
+
 $TGSenderEnabled = false; => true // разрешить отправку документа в telegram
 $EMSenderEnabled = false; => true // разрешить отправку документа по email
 
 _includes/setup-default.php_
+
 Переименовать includes/setup-default.php в includes/setup.php
-Заполнить данные mysql, smtp.mail.ru, telegrambot
+
+В setup.php заполнить данные для mysql, smtp.mail.ru и telegrambot
 
 
