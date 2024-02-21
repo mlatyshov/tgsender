@@ -30,10 +30,6 @@ $recipients_count = recipients_get_count();
 
 <h1>Менеджер рассылки</h1>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 0ad0baed8961d8226fc5e480b2c1e481689fdb85
 <div id='message'  class="alert warning">
 Здесь загружается pdf файл, настраивается список получателей.
 <br />
