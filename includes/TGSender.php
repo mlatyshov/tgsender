@@ -1,9 +1,6 @@
 <?php
 
-/**
- * 
- * 
- */
+
 namespace PDFSender;
 class TGSender 
 {
@@ -18,20 +15,19 @@ class TGSender
         $this->ch = curl_init();
 
     }
+    
+    // подготовка настроек, указание файла на отправку
     function prepare_send_file($file) {
         global $botToken;
+        
         $this->botToken = $botToken;
-        $this->documentPath = $file;
         $this->apiUrl = "https://api.telegram.org/bot{$this->botToken}/sendDocument";
- 
+        $this->documentPath = $file;
 
     }
     
     function send($chatId) : array {
 
- 
-
-        $result = [ 'result'=> false, 'error' => '' ];
         curl_setopt($this->ch, CURLOPT_URL, $this->apiUrl);
         curl_setopt($this->ch, CURLOPT_POST, 1);
         curl_setopt($this->ch, CURLOPT_POSTFIELDS, [
@@ -56,8 +52,8 @@ class TGSender
 
         return $result;
     }
+    
     function close() : void {
-        // Закрытие соединения
         curl_close($this->ch);
     }
     
