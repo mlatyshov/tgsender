@@ -2,17 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>tgsender</title>
     <link rel="stylesheet" href="resources/style.css?v1"  media="all" />
 </head>
 <body>
 <?php
-
 // =========================================================================
-// шаблонизатор не использую из-за размера проекта
-
-
-// общая фукциональность, подключение к БД
 include('includes/common.php');
 
 // наличие файла хранится в сессии для упрощения реализации
@@ -31,11 +26,9 @@ if ($uploadedFile && !file_exists($uploadDir . $uploadedFile_hashname)) {
 $recipients_count = recipients_get_count();
 
 // =========================================================================
-
 ?>
 
 <h1>Менеджер рассылки</h1>
-
 
 <div id='message'  class="alert warning"></div>
 
