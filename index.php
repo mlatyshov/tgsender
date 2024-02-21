@@ -30,7 +30,6 @@ $recipients_count = recipients_get_count();
 
 <h1>Менеджер рассылки</h1>
 
-<<<<<<< HEAD
 
 <div id='message'  class="alert warning">
 Здесь загружается pdf файл, настраивается список получателей.
@@ -39,9 +38,6 @@ $recipients_count = recipients_get_count();
 <br />
 В данный момент рассылка отключена.
 </div>
-=======
-<div id='message'  class="alert warning"></div>
->>>>>>> f5ca750e612a5fe059293c45ebc20c4f583bf99d
 
 <br /><hr />
 
